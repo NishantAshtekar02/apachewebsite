@@ -31,12 +31,12 @@ pipeline {
         }
     }
 
-    // post {
-    //     success {
-    //         echo 'Deployment Successful! Website is live on Apache.'
-    //     }
-    //     failure {
-    //         echo 'Deployment Failed! Check the logs for errors.'
-    //     }
-    // }
+    post {
+        success {
+            echo 'Deployment Successful! Website is live on Apache.'
+        }
+        failure {
+            echo 'Deployment Failed! Check the logs for errors.'
+        }
+    }
 }
